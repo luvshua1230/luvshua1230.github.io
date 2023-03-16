@@ -3,36 +3,98 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>우울해지는 이야기</title>
+	<title></title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 	<style type="text/css">
-		html{font-family: 'Noto Sans KR', sans-serif;}
-		body, h2, img, h1,p {margin: 0}
-		img{display: block; width: 100%;}
-		header,section,footer {width: 700px; margin: auto;}
-		header{height: 100px;}
-		h1{text-align: center; padding-top: 50px;font-size: 30px;font-weight: 900;}
-		section{margin-bottom: 90px;}
-		h2{margin-top: -20px; margin-bottom: 20px;font-size: 2.5em;font-weight: 900; line-height: 1.2; word-spacing: -1px; letter-spacing: -1px;}
-		h4{margin-top: 40px; margin-bottom: 20px;font-size: 2.5em;font-weight: 900; line-height: 1.2; word-spacing: -1px; letter-spacing: -1px;}
-		section p{margin-bottom: 20px;line-height: 150%;}
-		h5{margin-top: 40px; margin-bottom: 20px;font-size: 5em;font-weight: 900; line-height: 1.2; word-spacing: -1px; letter-spacing: -1px;}
-		section p{margin-bottom: 20px;line-height: 150%;}
+		html{font-family: 'Noto Sans KR', sans-serif; margin: 0; padding: 0; width: 100%; height: 100%;}
+		body,h1{margin: 0;}
 		footer{height: 200px;}
 		footer p{text-align: center;} 
+		header{width: 600px; height: 250px; margin: auto; background: red;}
+		section{width: 600px; height: 700px; margin: auto;}
+		.row{width: 600px; margin: auto; height: 150px;
+				display: flex; padding: 0px 5px;margin-bottom: 20px;}
+		.col-1{width: 90px; margin: 0px 5px;}
+		.col-2{width: 190px; margin: 0px 5px;}
+		.col-3{width: 290px; margin: 0px 5px;}
+		.col-4{width: 390px; margin: 0px 5px;}
+		.col-5{width: 490px; margin: 0px 5px;}
+		.col-6{width: 590px; margin: 0px 5px;}
+		.bg-none{background: none;}
+		.bg-blue{background: blue;}
+		.bg-white{background: white;}
+		.bg-red{background: red;}
+		.bg-gray{background: gray;}
+		.bg-header{background: url('background.jpg');
+			/*background-size: 100% auto;*/
+			background-size: 100% auto;
+			background-position: 100px -50px; 
+			background-attachment: fixed; }
+		.text-white{color: white;}
+		.text-align{text-align: center;}
+		.margin-top{margin-top: 50px}
+		.margin-topp{margin-top:200px}
+		.margin-toppp{margin-top:400px}
+		.margin-minus{margin-top: -40px}
+		.margin-minuss{margin-top: -250px}
+		.margin-minusss{margin-top: -50px}
+		.margin-minussss{margin-top: -200px}
+		.margin-minusssss{margin-top: -10px}
+		.margin-minussssss{margin-top: -180px}
+		.margin-left{margin-left: 200px}
+		.width600{width: 600px}
+		.padding-top{padding-top: 60px;}
+		.padding-topp{padding-top: 120px;}
+		.padding-minus{padding-top: -500px;}
+		.padding{padding: 50px;}
+		.imgsmall{display: block; width: 50%;}
+		.box-align{box-align: center;}
+		img{display: block; width: 100%;}
+		h1{padding-top: 70px; text-align:center; }
+		h2{font-size: 50px;font-weight: 900;}
+		li{background: lightgray;
+			text-decoration: none;
+			list-style-type: none;
+			list-style-position: inside;
+			height: 44px;
+			width: 25%; float:left;	
+			text-align:center;	
+			line-height:44px;	}
+			a{display: block;color: white; font-weight:900px; }
+		ul{height:300px; width:600px; margin:auto; margin-left:612px; box-align:center; }
+		a:hover{background: black;
+			color: white;
+			transition: all 0.5s;
 	</style>
 </head>
 <body>
-	<nav></nav>
-	<header>
-		<h1>웹퍼블리싱 3주차 과제</h1>
+	<header class="bg-header">
+		<div class="row">
+			<div class="col-6 bg-none">
+				<h1 class="text-white margin">즐거운 자취생활</h1>
+				<p class="text-white text-align">와 정말 즐겁다</p>
+			</div>
+		</div>
 	</header>
-	<section>
-		<img src="img1.jpg">
-		<h2>인류사상 최대최악의 절망적 사건</h2>
+
+	<nav>
+    	<ul class="menu flex margin-minus">
+				<li><a href="#1">기</a></li>
+				<li><a href="#2">승</a></li>
+				<li><a href="#3">전</a></li>
+				<li><a href="#4">결</a></li>
+		</ul>
+    </nav>
+<section class="margin-minuss">
+	<h2>'B'와의</h2>
+	<h2> 동거일지</h2>
+	<img src="img1.jpg" class="margin-minusss">
+</section>
+<section class="margin-minusss">
+	<div><a id="1"></a>
+		<h2 class="margin-minussss">끔찍한 사건</h2>
 		<p>슬슬 과제를 해야겠다고 자리에 앉았을 때 그것은 나타났다.
 	너저분한 책상을 가로지르는 자그마한 쌀알 크기의 무언가가 보였다.
 	순간적인 공포에 얼어붙어 움직일 수가 없었다. 그러나 지금 이것을 놓치면
@@ -43,22 +105,26 @@
 		<p>지금부터 편의상 그것을 'B'라고 부르겠다.
 내가 발견한 'B'는 통상의 그것의 절반 사이즈로, 유충인 것처럼 보였다.
 침대 구석에 앉아 덜덜 떨면서 검색을 했다.</p>
-	</section>
-	<section>
-		<img src="img2.jpg">
-		<h3>결과는 절망적이었다.</h3>
-		<p>이 외에도 'B'들은 자는 사이에 사람 입에 들어간다는 괴담이 있었다.
-그 얘기가 사실이라면 나는 이미 수많은 'B'들과 찐하게 키스한 것이 된다. 죽고 싶어졌다.</p>
-	</section>
+	</div>
 
 	<section>
+		<img src="img2.jpg" class="padding-top">
+		<h2>결과는 절망적이었다.</h2>
+		<div><a id="2"></a>
+		<p>이 외에도 'B'들은 자는 사이에 사람 입에 들어간다는 괴담이 있었다.
+그 얘기가 사실이라면 나는 이미 수많은 'B'들과 찐하게 키스한 것이 된다. 죽고 싶어졌다.</p>
+	</div>
+	</section>
+
+	<section class="padding-topp">
 		<img src="img3.jpg">
 		<h3>바로 세O코 사이트에 들어가 방문신청을 했다.</h3>
 		<p>신청을 마치고 
 생사여부를 확인하기위해 아까 'B'를 가둬두었던 컵을 들여다 봤다.</p>
 	</section>
 
-	<section>
+	<section class="margin-minussssss">
+		<div><a id="3"></a>
 		<img src="img4.jpg">
 		<h4>'B'가...없었다....</h4>
 		<h3>집을 버릴 결심을 했다.</h3>
@@ -70,21 +136,23 @@
 아무튼 집 안의 모든 것이 썩은 것만 같고 의심스러워 정신을 차릴 수가 없었다.
 집에 더 있으면 진짜 정신 이상해질것같아서 황급히 나갔다. 24시간 카페에서 밤을 샜다.
 머리가 어질어질했다.</p>
+	</div>
 	</section>
-	<section>
-		<img src="img5.jpg">
+
+	<section class="margin-topp">
+		<div><a id="4"></a>
+		<img src="img5.jpg" class="igsmallm">
 		<h4>집에 보내줘</h4>
 		<p>자취방...에 대해서는 여태 최대한 긍정적으로 생각해 보려고 노력했다.
 방에 콘센트가 정확히 네개밖에 없는데 위치도 애매해서 멀티탭을 오천개 사야 했고,
 연장 코드로 방바닥이 난장판이 돼도 그러려니 했다. 방음이 하나도 안 돼서 복도에 사람 오가는 소리,
-옆방 알람소리, 말소리 다 들려서 이러다 정신에 병이 드는 게 아닌가 걱정이 되기도 했지만 방구석에서 게임하는게 너무 재밌어서 또 그러려니 했다.
-그런데 'B'는 정말..감당하기가 힘들다..월세 한푼 안내면서 같이먹고 같이자는 동거인 12038123명(마리)는 필요없다..당연히 게임도 같이 하고싶지 않다...
+옆방 알람소리, 말소리 다 들려서 이러다 정신에 병이 드는 게 아닌가 걱정이 되기도 했지만 그냥저냥 참았다..
+그런데 'B'는 정말..감당하기가 힘들다..월세 한푼 안내면서 같이먹고 같이자는 동거인 12038123명(마리)는 필요없다..
 본가에 가고싶다.. 고양이가 있고 넓고 깨끗한 본가에 가고 싶다..근데 본가가면 엄마가 본인 대학생 시절에는 방음안되고 물질질새고 벌레나오는데서도
-잘만살았다고 너는 왜그렇게 근성없고 나약하냐고 뭐라할거같다...나약해서 죄송합니다 'B'에 져버리는 약해빠진 종이인간이라 죄송하게 됐습니다...</p>
+잘만살았다고 너는 왜그렇게 근성없고 나약하냐고 뭐라할거같다...나약해서 죄송합니다 'B'에 져버리는 종이인간이라 죄송하게 됐습니다...</p>
+	</div>
 	</section>
-	<section>
-		<h5>구축건물가지마세요</h5>
-	</section>
-	<footer><p>21100991 김채원</p></footer>
+	<footer class="margin-toppp"><p>21100991 김채원</p></footer>
 </body>
+
 </html>
